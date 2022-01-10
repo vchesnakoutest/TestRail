@@ -4,14 +4,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import pages.HomePage;
 
-public class LoginSteps {
-
-    HomePage homePage;
-
-    @Before
-    public void setup() {
-        homePage = new HomePage();
-    }
+public class LoginSteps extends AbstractSteps{
 
     @Given("I open home page")
     public void iOpenHomePage() {
